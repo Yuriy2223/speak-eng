@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speak English</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <span class="orb orb-1" aria-hidden="true"></span>
+    <span class="orb orb-2" aria-hidden="true"></span>
+    <span class="orb orb-3" aria-hidden="true"></span>
+
+    <main class="app">
+      <div class="launcher">
+        <div class="launcher-hero">
+          <div class="hero-letters" id="heroLetters" aria-hidden="true"></div>
+          <div class="page-badge">✦ English Learning</div>
+          <div class="launcher-title">Speak<br />English</div>
+          <div class="launcher-sub">
+            Тренуй англійську —<br />букви, цифри та слова
+          </div>
+        </div>
+
+        <div class="modules-grid">
+          <a href="html/letters.html" class="module-card letters">
+            <div class="module-icon">🔤</div>
+            <div class="module-info">
+              <div class="module-title">Букви</div>
+              <div class="module-desc">A → Z<br />Вимова алфавіту</div>
+              <div class="module-stats" id="statsLetters">
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Сесій</div>
+                </div>
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Рекорд</div>
+                </div>
+              </div>
+            </div>
+            <div class="module-arrow">→</div>
+          </a>
+
+          <a href="html/numbers.html" class="module-card numbers">
+            <div class="module-icon">🔢</div>
+            <div class="module-info">
+              <div class="module-title">Цифри</div>
+              <div class="module-desc">0 → 100<br />Назви по-англійськи</div>
+              <div class="module-stats" id="statsNumbers">
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Сесій</div>
+                </div>
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Рекорд</div>
+                </div>
+              </div>
+            </div>
+            <div class="module-arrow">→</div>
+          </a>
+
+          <a href="html/words.html" class="module-card words">
+            <div class="module-icon">💬</div>
+            <div class="module-info">
+              <div class="module-title">Слова</div>
+              <div class="module-desc">Переклад базових слів EN ↔ UA</div>
+              <div class="module-stats" id="statsWords">
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Сесій</div>
+                </div>
+                <div class="module-stat">
+                  <div class="module-stat-val">—</div>
+                  <div class="module-stat-lbl">Рекорд</div>
+                </div>
+              </div>
+            </div>
+            <div class="module-arrow">→</div>
+          </a>
+        </div>
+
+        <div class="launcher-footer">
+          <a href="html/history.html" class="btn-history-full"
+            >📊 Вся історія</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

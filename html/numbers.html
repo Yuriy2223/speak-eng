@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speak English — Цифри</title>
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/numbers.css" />
+</head>
+<body>
+
+  <span class="orb orb-1" aria-hidden="true"></span>
+  <span class="orb orb-2" aria-hidden="true"></span>
+  <span class="orb orb-3" aria-hidden="true"></span>
+
+  <main class="app">
+
+    <!-- GAME -->
+    <section class="screen active" id="gameScreen" aria-label="Гра">
+      <article class="card">
+        <header class="game-header">
+          <a href="../index.html" class="btn-back-inline">← Головна</a>
+          <span class="game-tag">🔢 Цифри</span>
+        </header>
+        <p class="progress-label" id="progressLabel">Число 1 з 10</p>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <figure class="letter-stage">
+          <figcaption class="letter" id="numberDisplay">?</figcaption>
+        </figure>
+        <output class="status info" id="statusText" aria-live="polite">
+          Натисни Listen або Speak
+        </output>
+        <nav class="btns" aria-label="Дії в грі">
+          <button class="btn btn-listen" id="btnListen">🔊 Listen</button>
+          <button class="btn btn-speak"  id="btnSpeak">🎤 Speak</button>
+        </nav>
+      </article>
+    </section>
+
+    <!-- RESULT -->
+    <section class="screen" id="resultScreen" aria-label="Результат">
+      <article class="card">
+        <header class="result-hero">
+          <span class="result-emoji" id="resultEmoji" aria-hidden="true">🌟</span>
+          <h2 class="result-grade" id="resultGrade">Відмінно!</h2>
+          <p class="result-sub"    id="resultSub">Тест завершено</p>
+        </header>
+        <dl class="result-stats">
+          <div class="stat-box">
+            <dd class="stat-num c" id="resCorrect">0</dd>
+            <dt class="stat-label">✓ Правильно</dt>
+          </div>
+          <div class="stat-box">
+            <dd class="stat-num w" id="resWrong">0</dd>
+            <dt class="stat-label">✗ Неправильно</dt>
+          </div>
+        </dl>
+        <nav class="result-actions">
+          <button class="btn-primary"   id="btnPlayAgain">🔄 Грати ще раз</button>
+          <a href="../index.html" class="btn-secondary">🏠 На головну</a>
+        </nav>
+      </article>
+    </section>
+
+  </main>
+
+  <script type="module" src="../js/numbers/numbers.js"></script>
+</body>
+</html>
